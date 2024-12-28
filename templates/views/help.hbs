@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+
+    <title>Help</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>To use this app, simply enter the name of a city and click search. Then you will see the current weather of the location you provided.</p>
+        <h3>If you get the error:</h3>
+        <ul>
+            <li><strong>'No matching results. Enter a valid location'</strong>: you probably entered a non-existent location.</li>
+            <li><strong>'You must enter an address'</strong>: you probably didnt enter any location at all.</li>
+            <li><strong>Infinite 'Loading...' message</strong>: check your internet connection. Having an adblocker enabled might also cause this error.</li>
+        </ul>
+    </div>
+    {{>footer}}
+</body>
+</html>
